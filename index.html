@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+    <header>
+    <img class="logo" src="cheatChatLogo.svg">
+    <h1>Welcome to Cheat Chat</h1>
+    <h3 class="highlights">Born to teach programming</h3>
+    <p class="user">Give me a python for loop</p>
+    <p class="cpu">Here it is</p>
+    <div class="miniicon">
+        <img src="bot.svg">
+    </div>
+    <button class="search">Look for a bot</button>
+    </header>
+    <footer>
+        <p class="link1">About us</p>
+        <p class="link2">Support</p>
+        <p class="link3">Terms</p>
+        <p>Language</p>
+    </footer>
+    <script type="text/javascript">
+        setInterval(function() {
+            $('h3').fadeOut(500, function() {
+                var $this = $(this);
+                $this.text($this.text() == 'A bot that speaks your language' ? 'Chat in any language' : 'A bot that speaks your language');
+                $this.toggleClass('first second');
+                $this.fadeIn(500);
+            });
+        }, 3000);
+    </script>
+</body>
+</html>

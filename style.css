@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Avenir";
+    src: url(Avenir.ttc);
+}
+
+@font-face {
+    font-family: "Menlo";
+    src: url(Menlo.ttc);
+}
+
+
+body {
+    text-align: center;
+    align-self: center;
+}
+
+.logo {
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #222222;
+    letter-spacing: 0;
+    font-family: "Avenir-Book";
+}
+
+.highlights {
+    font-family: "Avenir-Book";
+    color: #42A2FA;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.user {
+    font-family: "Avenir-Book"
+    font-size: 22px;
+    letter-spacing: 0;
+    background-color: #428AFA;
+    border-radius: 20px 20px 0 20px;
+    color: #FFFFFF;
+    padding: 12px 46px 13px 20px;
+    width: 325px;
+    height: 47px;
+    margin-bottom: 42px;
+    margin:0 auto 0 50%;
+}
+
+.user::after {
+    position: relative;
+    bottom: -180%;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid #428AFA;
+    border-left: 15px solid transparent;
+    left: 35%;
+}
+
+.cpu {
+    font-family: "Avenir-Book"
+    margin-top: 140px;
+    background-color: grey;
+    border-radius: 20px 20px 20px 0;
+    padding: 15px 0 15px 26px;
+    width: 577px;
+    height: 147px;
+    margin: 5% 30% 0 auto;
+}
+
+.cpu::before {
+    bottom: -30px;
+    background-color: #353535;
+    font-family: "Menlo-Regular";
+    padding: 30px 271px 30px 271px;
+    width: 10px;
+    height: 10px;
+    content: "For Loop";
+    font-size: 18px;
+    color: #31AEFF;
+}
+
+.cpu::after {
+    position: relative;
+    bottom: -125%;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid grey;
+    border-right: 15px solid transparent;
+    right: 64%;
+}
+
+
+.miniicon {
+    margin: 10px 720px 42px auto;
+}
+
+.search {
+    background-color: #FEC94E;
+    border-radius: 20px;
+    border: none;
+    height: 62px;
+    width: 256px;
+    font-family: "Avenir-Heavy";
+    font-size: 22px;
+    letter-spacing: 0;
+}
+
+footer {
+    color: #42A2FA;
+    display: inline-flex;
+    font-family: "Avenir-Medium"
+    font-size: 16px;
+    letter-spacing: 0;
+    margin: 350px 0 42px 0;
+}
+
+.link1, .link2, .link3 {
+    padding-right: 165px;
+}
